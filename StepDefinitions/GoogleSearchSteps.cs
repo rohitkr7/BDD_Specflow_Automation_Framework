@@ -41,14 +41,14 @@ namespace BDD_Tutorial_classLib_netFramework.StepDefinitions
             Assert.True(driver.FindElement(By.XPath("//h3[text()='"+ msgToCheck + "']")).Displayed,"'India - Wikipedia' link didn't show up in the UI");
         }
 
-        [BeforeScenario]
+        [BeforeScenario("mytag_googleSearch")]
         public void DoTheSetup()
         {
             Console.WriteLine("Inside the Before Scenario method..... Doing Setup");
             SetUp();
         }
 
-        [AfterScenario]
+        [AfterScenario("mytag_googleSearch")]
         public void DoTheTearDown()
         {
             Console.WriteLine("Inside the After Scenario method..... Doing Teardown");

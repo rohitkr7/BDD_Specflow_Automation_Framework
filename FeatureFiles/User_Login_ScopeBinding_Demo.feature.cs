@@ -18,21 +18,20 @@ namespace BDD_Tutorial_classLib_newFramework.FeatureFiles
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("GoogleSearch")]
-    public partial class GoogleSearchFeature
+    [NUnit.Framework.DescriptionAttribute("User_Login_ScopeBinding_Demo")]
+    public partial class User_Login_ScopeBinding_DemoFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "GoogleSearch.feature"
+#line 1 "User_Login_ScopeBinding_Demo.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GoogleSearch", "\tIn order to confirm that\r\n\tEvery time I search something in google\r\n\tcorrespondi" +
-                    "ng matching results should show up.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User_Login_ScopeBinding_Demo", "\tSimple feature to demonstrate User login feature", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -71,23 +70,21 @@ namespace BDD_Tutorial_classLib_newFramework.FeatureFiles
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Google Search")]
-        [NUnit.Framework.CategoryAttribute("mytag_googleSearch")]
-        public virtual void GoogleSearch()
+        [NUnit.Framework.DescriptionAttribute("Login for user portal")]
+        [NUnit.Framework.CategoryAttribute("userLogin")]
+        public virtual void LoginForUserPortal()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Google Search", null, new string[] {
-                        "mytag_googleSearch"});
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login for user portal", null, new string[] {
+                        "userLogin"});
+#line 5
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
+#line 6
+ testRunner.Given("I have opened the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 7
+ testRunner.And("I login to application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 8
- testRunner.Given("I am on the google homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
- testRunner.And("I entered India in the search box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 10
- testRunner.When("I press search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
- testRunner.Then("seacrh results for India - Wikipedia should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I see user portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

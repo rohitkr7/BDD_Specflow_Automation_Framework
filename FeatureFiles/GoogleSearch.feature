@@ -2,8 +2,8 @@
 	In order to confirm that
 	Every time I search something in google
 	corresponding matching results should show up.
-
-@mytag
+	
+@mytag_googleSearch
 Scenario: Google Search
 	Given I am on the google homepage
 	And I entered India in the search box
